@@ -300,6 +300,7 @@ PRODUCT_PACKAGES += \
     LineageSettingsOverlayCommon \
     SettingsOverlayCommon \
     SettingsProviderOverlayCommon \
+    SimpleDeviceConfigOverlayCommon \
     SystemUIOverlayCommon \
     TelephonyOverlayCommon \
     WifiResourcesOverlayCommon

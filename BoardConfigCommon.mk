@@ -77,10 +77,6 @@ MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Camera - Miui
 TARGET_CAMERA_PACKAGE_NAME := com.android.camera
-# Camera - HIDL overrideFormat
-TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT = true
-# Camera - HIDL overrideFormat - Alternative Version
-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED = true
 # Camera - Torch
 TARGET_CAMERA_SERVICE_EXT_LIB := //$(COMMON_PATH):libcameraservice_extension.xiaomi_sm8250
 # Display

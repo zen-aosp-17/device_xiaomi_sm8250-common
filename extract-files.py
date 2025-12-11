@@ -32,6 +32,12 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.*seclabel u:r:mi_thermald:s0\n', ''),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
+    (
+        'vendor/lib64/libaudiocloudctrl.so',
+        'vendor/lib64/libdpps.so',
+        'vendor/lib64/libsnapdragoncolor-manager.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libril-qc-hal-qmi.so': blob_fixup()
         .binary_regex_replace(b'ro.product.vendor.device', b'ro.vendor.radio.midevice'),
     'vendor/lib64/libwvhidl.so': blob_fixup()

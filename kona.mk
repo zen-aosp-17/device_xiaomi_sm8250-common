@@ -155,6 +155,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 endif
 
+# Camera
+$(call soong_config_set,libcameraservice,ext_lib,libcameraservice_extension.xiaomi_sm8250)
 # Display
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service

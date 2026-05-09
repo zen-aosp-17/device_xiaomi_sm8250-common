@@ -16,6 +16,9 @@ persist.sys.perf.topAppRenderThreadBoost.enable=false
 #Disbale FPS capping for games
 debug.graphics.game_default_frame_rate.disabled=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # App launch prefetching (IORapd)
 ro.iorapd.enable=false
 iorapd.perfetto.enable=false

@@ -240,6 +240,9 @@ PRODUCT_PACKAGES += \
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_kona)
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Input
 PRODUCT_PACKAGES += \
     Xiaomi_Smart_Pen_Keyboard.kl \
